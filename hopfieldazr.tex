@@ -1,0 +1,121 @@
+\documentclass[10pt]{article} %% What type of document you're writing.
+
+ 
+\usepackage{graphicx}
+
+ 
+\usepackage{hyperref}
+
+ 
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[utf8]{inputenc}
+
+ 
+%%%%% Preamble
+
+%% Packages to use
+
+ 
+\usepackage{amsmath,amsfonts,amssymb} %% AMS mathematics macros
+
+%% Title Information.
+
+ 
+\documentclass[10pt]{article} %% What type of document you're writing.
+
+ 
+\usepackage{graphicx}
+
+ 
+\usepackage{hyperref}
+
+ 
+\usepackage[dvipsnames]{xcolor} 
+
+ 
+\usepackage{amsmath,amsfonts,amssymb} %% AMS mathematics macros
+
+ 
+
+%% Title Information.
+
+ 
+\title{RED NEURONAL (Logos De Lenguajes de Programacion) \\ \\ \\ \\}
+
+ 
+\author{Arturo Zilli Rios  \\ \\ \\ \\ \\ Universidad Veracruzana.  \\ \\ \\ \\ \\ Facultad de Negocios y Tecnologías, campus Ixtac.  \\ \\ \\ \\ \\ Paradigmas de programación. \\ \\ \\ \\ \\Catedrático: Doc. Adolfo Centeno Tellez \\ \\ \\ \\ \\
+402 Ingeniría de Software. \\ \\ \\ \\ \\ }
+
+ 
+%% \date{29 sep 2020} %% By default, LaTeX uses the current date
+
+ 
+%%%%% The Document
+
+ 
+\begin{document}
+ 
+\maketitle
+
+
+ 
+%\begin{abstract}
+ 
+%This document implements the neural network, to find geometric \\ figures. \\ \\
+ 
+%\end{abstract}
+
+
+\section{Abstract}
+
+
+This document implements the neural network, to find programming lenguages logos
+
+
+
+\section{Introduccion}
+
+ 
+\textcolor{black}{En este proyecto realizado en C++ y aplicando conocimientos matematicos, se analizo el comportamiento de una red neuronal, este sistema tiene un conjunto de unidades conocidas como} \textcolor{blue}{neuronas} \textcolor{black}{, estas estan comunicadas entre si para dar un conjunto de indicaciones, en esta area se aplican detecciones de soluciones que son dificil de explicar con una programacion normal, el objetivo de este proyecto es aprender el comportamiento de una red neuronal utilizando la forma} \textcolor{blue}{Hopfield} \textcolor{black}{, el objetivo es que logre encontrar una entrada, en este caso un logo de algun lenguaje de programacion y el codigo buscara en 10 patrones y encontrara la coincidencia, todo esto sera programado en el lenguaje c++ y para comprobar que los calculos sean correctos utilizaremos MATLAB.} \\
+
+
+ 
+\section{Desarrollo}
+
+ 
+ \textcolor{black}{Primero debemos entender como funciona una red neuronal HOPFIELD, este usa una memoria asosiativa con unidades binarias, como bien sabemos en la informatica 0 y 1, con estos datos identificaremos si las unidades superan o no un determiando umbral. \\Aplicaremos conocimientos matematicos, en especifico matrices. \\Por eso utilizamos MATLAB, con esta creamos un prototipo de los calculos a realizar para posteriormente pasar todos esos calculos al lenguaje de programacion, en este caso c++. \\ \\
+ 
+0 0 0 0 0 0 0 0 0 0 0 0 0\\
+0 1 1 1 1 1 0 0 0 0 0 0 0\\
+0 1 1 1 1 1 0 0 0 0 0 0 0\\
+0 1 1 0 0 0 0 0 0 0 0 0 0\\
+0 1 1 0 0 0 0 0 0 0 0 0 0\\
+0 1 1 0 0 0 0 1 0 0 0 1 0\\
+0 1 1 0 0 0 1 1 1 0 1 1 1\\
+0 1 1 0 0 0 0 1 0 0 0 1 0\\
+0 1 1 0 0 0 0 0 0 0 0 0 0\\
+0 1 1 0 0 0 0 0 0 0 0 0 0\\
+0 1 1 1 1 1 0 0 0 0 0 0 0\\
+0 1 1 1 1 1 0 0 0 0 0 0 0\\
+0 0 0 0 0 0 0 0 0 0 0 0 0\\
+
+ Aqui estamos representando el logo de C++, representando una imagen con 0 y 1 Ejemplo: \\ 
+ 
+ 
+ Pero debemos determinar hasta cuantas figuras puede leer nuestro programa, por lo cual ocupamos una formula que es multiplicar el numero de filas y el numero de columnas, este resultado multiplicarlo por .15\\ El programa puede confundirse con imagenes muy parecidas, por lo cual tiene un margen de error.  }
+
+ 
+ 
+
+ 
+\section{Conclusion}
+
+\textcolor{black}{Estamos en una etapa de la vida donde la tecnologia cada vez es mas importante, la IA, ha tomado una importancia tan grande en todas las industrias que poco a poco la veremos cada vez mas, desde acelerar procesos, ayudar en temas de logistica hasta prevenir enfermedades, este programa puede tener demasiadas aplicaciones en la vida real, como en uno de mis proyectos que es reconocimiento de rostros cuando se comete un delito, claro este programa asi como esta no se lograria nada, pero puedes escalar el codigo para poco a poco ir haciendolo mucho mas funcional.}
+
+ 
+
+ 
+
+ 
+\end{document}
